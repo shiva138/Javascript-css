@@ -1,0 +1,80 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: rgb(27, 194, 255);
+}
+
+div{
+    background-color: rgb(191, 232, 234);
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(47, 35, 36);
+}
+
+#textBox{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+label{
+    font-size: large;
+
+}
+button{
+    width: 89px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: fantasy;
+    color: rgba(105, 82, 82, 0.303);
+    background-color: rgb(189, 242, 224);
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    font-family: cursive;
+
+}
+
+p{
+    font-size: bold;
+    font-size: 25px;
+}
+
+input[type="radio"] {
+    appearance: none; /* Removes default styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333; /* Outer circle */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #4a98d4; /* Inner dot */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Initially hidden */
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1); /* Show when checked */
+}
+input[type="radio"]:hover{
+    background-color: aliceblue;
+}
